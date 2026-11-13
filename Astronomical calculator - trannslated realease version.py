@@ -391,7 +391,7 @@ def calculate_definite_integral(function, upper_limit, lower_limit):
 @ui.page('/info')
 def info_page(): 
     ui.label("This calculator is made for doing calculations based on astroscience and especially rockets.")
-    ui.label("It was created by Keith Pukhrambam (12 yrs old) from October 2026 till November 2026 and can still receive updates.")
+    ui.label("It was created by Keith Pukhrambam from October 2026 till November 2026 and can still receive updates.")
     ui.label("Also, AI was only used to help Keith learn so mistakes are more likely than an AI model (though it analyzed the code).")
     ui.label("This calculator is made for educational purposes and is not intended for professional use.")
     ui.label("Note: All the variable boxes about the celestial bodies are initially based on earth.")
