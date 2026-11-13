@@ -1,4 +1,4 @@
 nicegui
 sympy
-math
-os
+scipy
+numpy
