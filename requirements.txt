@@ -1,0 +1,4 @@
+nicegui
+sympy
+math
+os
