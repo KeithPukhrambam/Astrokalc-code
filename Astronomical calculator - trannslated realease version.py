@@ -375,7 +375,7 @@ def definite_integrals_page():
     function=ui.input("What is the function", value="x^2")
     ui.label("Note: use * instead of leaving the space between x and multiplier ")
     upper_limit=ui.number("What is the upper limit?", value=10)
-    lower_limit=ui.number("What is the lower limit", vlaue=5)
+    lower_limit=ui.number("What is the lower limit", value=5)
     ui.button("Calculate", on_click=lambda: calculate_definite_integral(function.value, upper_limit.value, lower_limit.value))
 def calculate_definite_integral(function, upper_limit, lower_limit):
     function_sp=sp.sympify(function)
