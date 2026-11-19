@@ -400,5 +400,5 @@ def info_page():
     ui.link('Back to home', '/')
 ui.run(host='0.0.0.0', port=int(os.environ.get('PORT', 10000)),
        title='astrokalc',
-       dark=True
+       dark=True,
        socketio_settings={'max_http_buffer_size': 10_000_000})
