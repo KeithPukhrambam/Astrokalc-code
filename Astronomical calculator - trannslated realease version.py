@@ -401,4 +401,4 @@ def info_page():
 ui.run(host='0.0.0.0', port=int(os.environ.get('PORT', 10000)),
        title='astrokalc',
        dark=True,
-       socketio_settings={'max_http_buffer_size': 10_000_000})
+       max_http_buffer_size=10 * 1024 * 1024,)
