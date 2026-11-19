@@ -399,4 +399,6 @@ def info_page():
     ui.label("Version 1.0.0 (November 2026): Initial release with 16 calculations and a basic UI.")
     ui.link('Back to home', '/')
 ui.run(host='0.0.0.0', port=int(os.environ.get('PORT', 10000)),
-       title='astrokalc', dark=True)
+       title='astrokalc',
+       dark=True
+       socketio_settings={'max_http_buffer_size': 10_000_000})
