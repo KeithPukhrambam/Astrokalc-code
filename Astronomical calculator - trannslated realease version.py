@@ -3,6 +3,7 @@ import math
 import sympy as sp
 import numpy as np
 import scipy as sc
+import fastapi as fa
 from nicegui import ui
 
 def clear():
@@ -398,7 +399,11 @@ def info_page():
     ui.label("Updates:")
     ui.label("Version 1.0.0 (November 2026): Initial release with 16 calculations and a basic UI.")
     ui.link('Back to home', '/')
+@app.get('/health')
+def health_check():
+    return PlainTextResponse('ok') 
 ui.run(host='0.0.0.0', port=int(os.environ.get('PORT', 10000)),
-       title='astrokalc',
+       title='Astrokalc',
        dark=True,
+       favicon='🌌'
        )
