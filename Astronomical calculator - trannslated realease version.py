@@ -3,8 +3,8 @@ import math
 import sympy as sp
 import numpy as np
 import scipy as sc
-import fastapi as fa
-from nicegui import ui
+from fastapi.responses import PlainTextResponse
+from nicegui import app, ui
 
 def clear():
     os.system('cls'if os.name == 'nt' else 'clear')
